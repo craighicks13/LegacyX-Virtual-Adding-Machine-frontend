@@ -65,7 +65,7 @@ const LineItem = ({ line, item }) => {
 					onChange={(e) => setTax(e.target.value)}
 					value={tax}
 					className="w-12 text-right h-8"
-					onBlur={(e) => updateItemProperty(id, 'sales_tax', credits)}
+					onBlur={(e) => updateItemProperty(id, 'sales_tax', tax)}
 				/>
 			</div>
 			<button onClick={() => deleteLineItem(id)} className="btn">

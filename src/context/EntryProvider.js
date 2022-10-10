@@ -21,6 +21,7 @@ export function EntryProvider({ children }) {
 	const [loadFromLocalStorage, setLoadFromLocalStorage] =
 		useState(true);
 	const navigate = useNavigate();
+	const [message, setMessage] = useState('');
 
 	useEffect(() => {
 		if (loadFromLocalStorage) {
@@ -33,6 +34,9 @@ export function EntryProvider({ children }) {
 				setEntry(data);
 				setMemo(data.memo);
 				setLineItems(data.lineItems);
+				setMessage(
+					'Loaded unsaved data! Make sure to save to prevent from losing data.'
+				);
 			} else {
 				setLoadFromLocalStorage(false);
 				return;
@@ -72,10 +76,11 @@ export function EntryProvider({ children }) {
 		entry.lineItems = lineItems;
 		const result = await saveEntry(entry.id, JSON.stringify(entry));
 		if (result === 'success') {
+			setMessage('');
 			localStorage.clear();
 			navigate('/');
 		} else {
-			alert('error');
+			setMessage('There was an error saving.');
 		}
 	}
 
@@ -127,6 +132,7 @@ export function EntryProvider({ children }) {
 				entry,
 				lineItems,
 				memo,
+				message,
 				submitEntry,
 				newLineItem,
 				deleteLineItem,
