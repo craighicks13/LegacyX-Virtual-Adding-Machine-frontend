@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# LegacyX Take-Home Technical Interview Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+The goal of this challenge is to help us learn how you break down and solve technical challenges. This challenge involves a simple user story, a git repository and you. Read the story and implement the full stack challenge as you see fit. This story is about writing a Virtual Adding Machine to support Harold the accountant - exponentially improving his day to day work.
 
-In the project directory, you can run:
+## User Story
 
-### `npm start`
+As an accountant, Harold needs to add a number of journal entries and review the history of the calculations for errors. He starts the LegacyX Virtual Adding Machine site and clears the history. Looking at his stack of paper receipts, he begins adding the values until the addition is complete.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+While comparing the final results, catastrophe strikes and the power in Harold’s office goes out. When the power is restored, Harold returns to the Virtual Adding Machine site and lets out a cheer when he sees that his work was preserved.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Continuing the review of the results, Harold notices that his calculated balance doesn’t match what he expects, so he begins reviewing the calculation history until he notices an entry that is off by one dollar - a typo! He saves the history to a file, repeats the calculations and the balances match perfectly.
 
-### `npm test`
+## Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This challenge is your chance to show us what you’ve got, it’s your time to shine! Create a new project in a new git repository. Show us some full stack code. Choose and define the tech and stub in the required methods - explaining the what, why and how within the stubbed out code. We obviously won’t reject a fully functional proof of concept, but the goal here is to help us understand your process.
 
-### `npm run build`
+## Expectations
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To help us understand how you approach problems, please break down the solution into manageable units of work and estimate the amount of time you’ll need to complete each of them. We anticipate you should be able to have a presentable solution in less than eight hours.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**We’d like to see:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Your thought process: what requirements did you identify that needed to be implemented in order to solve the problem?
+- How did you separate your requirements into units of work in order to tackle the challenge?
+- Did you encounter any unexpected challenges?
+- What is your definition of done?
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+During your first technical interview you’ll be invited to share your git repository and walk us through your code to help us understand how it works and the decisions you made.
