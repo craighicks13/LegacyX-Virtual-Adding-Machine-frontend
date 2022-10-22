@@ -1,40 +1,28 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import JournalItemsList from './app/JournalItemsList';
-import EditEntry from './app/EditEntry';
-import { EntryProvider } from './context/EntryProvider';
-import { JournalsProvider } from './context/JournalsProvider';
+import EntriesList from './components/EntriesList';
+import EditEntry from './components/EditEntry';
 import MainHeader from './components/headers/MainHeader';
+import Login from './components/Login';
+import CreateAccount from './components/CreateAccount';
 
 function App() {
-	return (
-		<BrowserRouter>
-			<div className="min-h-screen font-normal text-textmain mx-auto max-w-5xl">
-				<MainHeader />
-				<div className="flex md:gap-x-10 px-5 pt-2 md:pt-10 mx-auto">
-					<div className="w-full">
-						<Routes>
-							<Route
-								path="/"
-								element={
-									<JournalsProvider>
-										<JournalItemsList />
-									</JournalsProvider>
-								}
-							/>
-							<Route
-								path="/entry/:entryId"
-								element={
-									<EntryProvider>
-										<EditEntry />
-									</EntryProvider>
-								}
-							/>
-						</Routes>
-					</div>
-				</div>
-			</div>
-		</BrowserRouter>
-	);
+  return (
+    <BrowserRouter>
+      <div className="text-textmain mx-auto min-h-screen max-w-5xl font-normal">
+        <MainHeader />
+        <div className="mx-auto flex px-2 pt-2 sm:px-5 md:gap-x-10 md:pt-10">
+          <div className="w-full">
+            <Routes>
+              <Route path="/" element={<Login />} />
+              <Route path="/create-account" element={<CreateAccount />} />
+              <Route path="/entries" element={<EntriesList />} />
+              <Route path="/entry/:entryNum" element={<EditEntry />} />
+            </Routes>
+          </div>
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;

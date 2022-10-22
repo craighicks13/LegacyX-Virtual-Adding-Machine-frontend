@@ -4,20 +4,26 @@
   "private": true,
   "proxy": "http://localhost:8000",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.1.2",
+    "firebase": "^9.12.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-redux": "^8.0.4",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "eslint --fix src",
+    "format": "prettier --write src",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,7 +47,10 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
+    "eslint": "^8.25.0",
     "postcss": "^8.4.17",
+    "prettier": "^2.7.1",
+    "redux-devtools-extension": "^2.13.9",
     "tailwindcss": "^3.1.8"
   }
 }

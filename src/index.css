@@ -1,11 +1,29 @@
 @tailwind base;
 
 input {
-    @apply border rounded bg-neutral-100 text-xs px-2 py-1 text-neutral-700;
+    @apply border rounded bg-neutral-100 text-xs px-1 sm:px-2 py-1 text-neutral-700 w-full h-8;
+}
+
+@layer base {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+        -webkit-appearance: none;
+        margin: 0;
+        -moz-appearance: textfield !important;
+    }
 }
 
 .btn {
-    @apply bg-neutral-400 text-neutral-900 font-bold py-2 px-4 rounded inline-flex items-center hover:bg-neutral-700 hover:text-white;
+    @apply bg-neutral-400 text-neutral-900 font-bold py-1 sm:py-2 px-2.5 sm:px-4 rounded inline-flex items-center hover:bg-neutral-700 hover:text-white;
+    @apply text-xs justify-center ;
+    
+    
+}
+
+.icon-button {
+    @apply bg-neutral-400 text-neutral-900 font-bold px-2 sm:px-2 rounded inline-flex items-center hover:bg-neutral-700 hover:text-white;
+    @apply text-base sm:text-xl h-full;
 }
 
 @tailwind components;

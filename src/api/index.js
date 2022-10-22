@@ -1,18 +1,9 @@
 import axios from 'axios';
 
-//TODO: Log in user
-export async function logInUser(user, password) {
-	//Log in user
-}
-
-//TODO: Log out user
-export async function logOutUser() {
-	// Log out user
-}
-
-//TODO: Pull entries for logged in user
-export async function loadAll(user = '') {
-	const response = await axios.get(`/api/journals`);
+export async function loadAll(uid, abortController) {
+	const response = await axios.get(`/api/journals/${uid}`, {
+		signal: abortController,
+	});
 	return response.data;
 }
 
@@ -21,8 +12,11 @@ export async function createJournalEntry() {
 	return response.data;
 }
 
-export async function deleteJournalEntry(id) {
-	const response = await axios.put(`/api/journal/${id}/delete`);
+export async function deleteJournalEntry(uid, id) {
+	const response = await axios.post(`/api/journal/${id}/delete`, {
+		entry_num: id,
+		uid: uid,
+	});
 	return response.data;
 }
 
@@ -31,9 +25,10 @@ export async function loadEntry(id) {
 	return response.data;
 }
 
-export async function saveEntry(id, entry) {
+export async function saveEntry(uid, id, entry) {
 	const response = await axios.post(`/api/journal/${id}/save`, {
 		entry: entry,
+		uid: uid,
 	});
 	return response.data;
 }
