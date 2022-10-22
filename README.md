@@ -1,4 +1,4 @@
-# LegacyX Take-Home Technical Interview Challenge
+# My Simple Ledger
 
 ## Objective
 
@@ -15,16 +15,3 @@ Continuing the review of the results, Harold notices that his calculated balance
 ## Instructions
 
 This challenge is your chance to show us what you’ve got, it’s your time to shine! Create a new project in a new git repository. Show us some full stack code. Choose and define the tech and stub in the required methods - explaining the what, why and how within the stubbed out code. We obviously won’t reject a fully functional proof of concept, but the goal here is to help us understand your process.
-
-## Expectations
-
-To help us understand how you approach problems, please break down the solution into manageable units of work and estimate the amount of time you’ll need to complete each of them. We anticipate you should be able to have a presentable solution in less than eight hours.
-
-**We’d like to see:**
-
-- Your thought process: what requirements did you identify that needed to be implemented in order to solve the problem?
-- How did you separate your requirements into units of work in order to tackle the challenge?
-- Did you encounter any unexpected challenges?
-- What is your definition of done?
-
-During your first technical interview you’ll be invited to share your git repository and walk us through your code to help us understand how it works and the decisions you made.
